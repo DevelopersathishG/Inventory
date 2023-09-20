@@ -19,9 +19,9 @@ public class Userservice {
         this.repository = repository;
     }
 
-//    public Userproduct getProductNameAndPrice(Long productId) {
-//        return repository.findNameAndPriceById(productId);
-//    }
+    public Userproduct getProductNameAndPrice(Long productId) {
+        return repository.findNameAndPriceById(productId);
+    }
 
     public List<Userproduct> getAllProducts() {
         List<Userproduct> products = repository.findAllLimitedDetails();
