@@ -30,9 +30,9 @@ public class Usercontroller {
         return new ResponseEntity<List<Userproduct>>(product, HttpStatus.OK);
     }
 
-//    @GetMapping("/products/{id}")
-//    public ResponseEntity<Userproduct> getProductLimitedDetails(@PathVariable Long id) {
-//        Userproduct userproduct = service.getProductNameAndPrice(id);
-//        return new ResponseEntity<>(userproduct, HttpStatus.OK);
-//    }
+    @GetMapping("/products/{id}")
+    public ResponseEntity<Userproduct> getProductLimitedDetails(@PathVariable Long id) {
+        Userproduct userproduct = service.getProductNameAndPrice(id);
+        return new ResponseEntity<>(userproduct, HttpStatus.OK);
+    }
 }
